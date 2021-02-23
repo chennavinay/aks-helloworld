@@ -32,7 +32,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-world
-  annonations:
+  annotations:
   service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
   type: LoadBalancer
