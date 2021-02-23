@@ -32,8 +32,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-world
+  annonations:
+  service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - port: 80
     protocol: TCP
